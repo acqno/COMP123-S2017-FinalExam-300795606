@@ -9,12 +9,12 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 
 /*
- * Name:
- * Date:
- * StudentID:
- * Description:
- * Version:
- */
+ * Name: Alvin Quijano
+ * Student No.: 300795606
+ * Description: This is the SplashForm interface
+ * Version: 0.1 - Created the SplashForm interface 
+ */ 
+
 
 namespace COMP123_S2017_FinalExam_StudentID
 {
@@ -23,18 +23,6 @@ namespace COMP123_S2017_FinalExam_StudentID
         public SplashForm()
         {
             InitializeComponent();
-        }
-
-        /// <summary>
-        /// This is the SplashFormTimer's "Tick" event handler method
-        /// </summary>
-        /// <param name="sender"></param>
-        /// <param name="e"></param>
-        private void SplashFormTimer_Tick(object sender, EventArgs e)
-        {
-            SplashFormTimer.Enabled = false;
-            this.Hide();
-            Program.pickHighestCardForm.Show();
         }
     }
 }
