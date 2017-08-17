@@ -11,11 +11,11 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 
 /*
- * Name:
- * Date:
- * StudentID:
- * Description:
- * Version:
+ * Name: Alvin Quijano  
+ * Date: Aug 17, 2017
+ * StudentID: 300795606
+ * Description: This is the PickHighestCardForm 
+ * Version: 0.1 - Added the _scoreBoard private instance variable and ScoreBoard property
  */
 
 namespace COMP123_S2017_FinalExam_StudentID
@@ -29,6 +29,8 @@ namespace COMP123_S2017_FinalExam_StudentID
         Deck _deck;
         Hand _hand;
         int _maximumPoints;
+
+        private ScoreBoard _scoreboard;
 
         // PUBLIC PROPERTIES +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
         public List<PictureBox> DealtCardPictureBoxList
@@ -109,6 +111,18 @@ namespace COMP123_S2017_FinalExam_StudentID
             set
             {
                 this._maximumPoints = value;
+            }
+        }
+
+        public ScoreBoard ScoreBoard
+        {
+            get
+            {
+                return this._scoreboard;
+            }
+            set
+            {
+                this._scoreboard = value;
             }
         }
 
@@ -199,6 +213,8 @@ namespace COMP123_S2017_FinalExam_StudentID
             this._enableDealtCards();
             this._hideFinalScore();
             UserMessageTextBox.Text = "Click the Deal Button!";
+
+            
         }
 
         /// <summary>
