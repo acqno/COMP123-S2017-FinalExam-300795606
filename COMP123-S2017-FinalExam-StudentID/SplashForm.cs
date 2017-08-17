@@ -11,18 +11,37 @@ using System.Windows.Forms;
 /*
  * Name: Alvin Quijano
  * Student No.: 300795606
+ * Date: Aug 17, 2017
  * Description: This is the SplashForm interface
- * Version: 0.1 - Created the SplashForm interface 
+ * Version: 0.2 - Implemented the SplashFormTimer_tick event 
  */ 
 
 
 namespace COMP123_S2017_FinalExam_StudentID
 {
-    public partial class SplashForm : Form
+    public partial class CardSplashForm : Form
     {
-        public SplashForm()
+        // PUBLIC PROPERTIES 
+
+        public PickHighestCardForm PickHighestCardForm
+        {
+            get
+            {
+                return Program.CardForm;
+            }
+        }
+
+        public CardSplashForm()
         {
             InitializeComponent();
+        }
+
+        private void SplashFormTimer_Tick(object sender, EventArgs e)
+        {
+            this.PickHighestCardForm.Show();
+            this.Hide();
+
+            SplashFormTimer.Enabled = true;
         }
     }
 }
