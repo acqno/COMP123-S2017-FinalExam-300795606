@@ -42,12 +42,15 @@
             // SplashFormLabel
             // 
             this.SplashFormLabel.AutoSize = true;
-            this.SplashFormLabel.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.SplashFormLabel.Location = new System.Drawing.Point(239, 114);
+            this.SplashFormLabel.BackColor = System.Drawing.Color.Black;
+            this.SplashFormLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.SplashFormLabel.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.SplashFormLabel.Location = new System.Drawing.Point(12, 161);
             this.SplashFormLabel.Name = "SplashFormLabel";
-            this.SplashFormLabel.Size = new System.Drawing.Size(70, 25);
+            this.SplashFormLabel.Size = new System.Drawing.Size(580, 153);
             this.SplashFormLabel.TabIndex = 0;
-            this.SplashFormLabel.Text = "label1";
+            this.SplashFormLabel.Text = "            Welcome!\r\n\r\nPick The Highest Card Game";
+            this.SplashFormLabel.Click += new System.EventHandler(this.SplashFormLabel_Click);
             // 
             // CardSplashForm
             // 

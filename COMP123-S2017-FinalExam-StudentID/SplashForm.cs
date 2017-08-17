@@ -43,5 +43,10 @@ namespace COMP123_S2017_FinalExam_StudentID
 
             SplashFormTimer.Enabled = true;
         }
+
+        private void SplashFormLabel_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
