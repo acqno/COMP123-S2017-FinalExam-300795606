@@ -15,7 +15,7 @@ using System.Windows.Forms;
  * Date: Aug 17, 2017
  * StudentID: 300795606
  * Description: This is the PickHighestCardForm 
- * Version: 0.2 - Refactored the reset method
+ * Version: 0.3 - instantiated ScoreBoard object and passed a reference from the form
  */
 
 namespace COMP123_S2017_FinalExam_StudentID
@@ -239,6 +239,7 @@ namespace COMP123_S2017_FinalExam_StudentID
         private void PickHighestCardForm_Load(object sender, EventArgs e)
         {
             // Initialize ScoreBoard HERE
+            ScoreBoard scoreboard = new ScoreBoard(ScoreTextBox, TimeTextBox, FinalScoreTextBox);
 
             // Initialize the App Sounds
             this._buildDealtCardPictureBoxList();
@@ -289,7 +290,7 @@ namespace COMP123_S2017_FinalExam_StudentID
                 this.CurrentClickedCard.BackColor = Color.Green;
                 UserMessageTextBox.Text = "You Got It!";
 
-                //Uncomment this --> ScoreBoard.Score += this.MaximumPoints;
+                ScoreBoard.Score += this.MaximumPoints;
 
                 DealButton.Enabled = true;
             }
