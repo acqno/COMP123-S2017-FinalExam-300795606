@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1" MembersFormat="FullSignature">
+  <Class Name="COMP123_S2017_FinalExam_StudentID.Card">
+    <Position X="0.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AgAAAABAAAAAAAAAAAAABAgAAAAAAAAAAAAAAAAAgBA=</HashCode>
+      <FileName>Card.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="COMP123_S2017_FinalExam_StudentID.ScoreBoard">
+    <Position X="3.5" Y="1" Width="4" />
+    <TypeIdentifier>
+      <HashCode>AIAAAAAAAAYgAggAAAAAgAAAAAAAAAACEAAAAAAAAQA=</HashCode>
+      <FileName>ScoreBoard.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
