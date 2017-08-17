@@ -15,7 +15,7 @@ using System.Windows.Forms;
  * Date: Aug 17, 2017
  * StudentID: 300795606
  * Description: This is the PickHighestCardForm 
- * Version: 0.1 - Added the _scoreBoard private instance variable and ScoreBoard property
+ * Version: 0.2 - Refactored the reset method
  */
 
 namespace COMP123_S2017_FinalExam_StudentID
@@ -214,7 +214,8 @@ namespace COMP123_S2017_FinalExam_StudentID
             this._hideFinalScore();
             UserMessageTextBox.Text = "Click the Deal Button!";
 
-            
+            ScoreBoard.Score = 0;
+            ScoreBoard.Time = 30;
         }
 
         /// <summary>
